@@ -1,0 +1,17 @@
+{
+  "name": "todo",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node app"
+  },
+  "dependencies": {
+    "co": "^4.6.0",
+    "co-redis": "^2.0.0",
+    "express": "3.0.0rc4",
+    "jade": "*",
+    "node-uuid": "^1.4.7",
+    "redis": "^2.4.2",
+    "socket.io": "*"
+  }
+}
