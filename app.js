@@ -9,7 +9,7 @@ var express = require('express')
   , path = require('path')
   , io = require('socket.io')
   , redis = require('redis')
-  , client = redis.createClient({host: 'localhost'})
+  , client = redis.createClient('redis://mkgareja:ffb2044699cfd2c1364d2c3520fc8873@50.30.35.9:2106/')
   , co = require('co')
   , wrapper = require('co-redis')
   , redisCo = wrapper(client)
@@ -18,7 +18,7 @@ var express = require('express')
 var app = express();
 
 app.configure(function(){
-  app.set('port', process.env.PORT || 8080);
+  app.set('port', process.env.PORT || 2106);
   app.set('views', __dirname + '/views');
   app.set('view engine', 'jade');
   app.use(express.favicon());
